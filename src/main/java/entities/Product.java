@@ -1,5 +1,4 @@
 package entities;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,11 +13,9 @@ public class Product {
     public String getProdName() {
         return prodName;
     }
-
     public double getProdPrice() {
         return prodPrice;
     }
-
     public int getQuantity() {
         return quantity;
     }
@@ -58,7 +55,7 @@ public class Product {
         }else return 0;
     }
     public static int getProdCode(String prodName) throws SQLException {
-        String getProdPriceSet = "SELECT CODE from productsList WHERE PRODUCT= "+ "'" + prodName+"';";
+        String getProdPriceSet = "SELECT CODE from productsList WHERE PRODUCT= " + "'" + prodName+"';";
         Statement st = con.createStatement();
         ResultSet rst;
         try{

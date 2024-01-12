@@ -14,15 +14,12 @@ public class DBConnection {
                 }}
             return con;
         }
-        public static void closeConnection() throws SQLException{
-            if(con != null){
-                try{
+        public static void closeConnection() throws SQLException {
+            if (con != null) {
+                try {
                     con.close();
-                }catch (SQLException e){
+                } catch (SQLException e) {
                     throw new SQLException(e);
                 }
             }
-        }
-
-
-}
+        }}

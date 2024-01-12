@@ -9,7 +9,7 @@ public class ProductTest {
  }
 
  @Test
-    public void freteCalcTesteRetorna105(){
+    public void freteCalcTesteRetorna140(){
         assertEquals(140, Product.frete(2000));
     }
 }
